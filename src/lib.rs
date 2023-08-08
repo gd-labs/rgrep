@@ -35,8 +35,8 @@ impl Config {
     /// Extracts the query and filename from the arguments passed.
     pub fn new(args: &[String]) -> Result<Config, &str> {
         if args.len() < 3 {
-            return Err("Not enough arguments.");
-        }
+            return Err("Usage: cargo run <query> <filename>.");
+        } 
         // Here, `clone` is used so that the variables don't take
         // ownership over the string.
         let query = args[1].clone();
