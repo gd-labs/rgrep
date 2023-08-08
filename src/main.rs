@@ -2,7 +2,6 @@ use std::{
     env,
     process,
 };
-
 use rgrep::Config;
 
 fn main() {
